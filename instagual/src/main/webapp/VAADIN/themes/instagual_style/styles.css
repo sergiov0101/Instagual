@@ -15207,3 +15207,7 @@ div.v-layout.v-horizontal.v-widget {
 .instagual_style .v-verticallayout-login {
 	background-color: #2772b6;
 }
+
+.instagual_style #inicioSesion {
+	border: green !important;
+}

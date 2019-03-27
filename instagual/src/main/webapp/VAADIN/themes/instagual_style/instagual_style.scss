@@ -39,6 +39,9 @@
         background-color: rgb(39, 114, 182);
     }
 
+    #inicioSesion{
+        border: green !important;
+    }
     .button_inicioSesion {
         @extend .v-button;
     }
