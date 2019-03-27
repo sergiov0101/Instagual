@@ -32,7 +32,14 @@
 @import "../valo/valo.scss";
 
 @mixin instagual_style {
-  @include valo;
+    @include valo;
+    // Insert your own theme rules here
+    .v-verticallayout-login {
+        @extend .v-verticallayout;
+        background-color: rgb(39, 114, 182);
+    }
 
-  // Insert your own theme rules here
+    .button_inicioSesion {
+        @extend .v-button;
+    }
 }

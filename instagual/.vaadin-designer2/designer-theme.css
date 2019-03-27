@@ -2067,7 +2067,7 @@ div.v-layout.v-horizontal.v-widget {
 	margin-bottom: 0;
 }
 
-.instagual_style .v-button {
+.instagual_style .v-button, .instagual_style .button_inicioSesion {
 	position: relative;
 	text-align: center;
 	white-space: nowrap;
@@ -2093,7 +2093,7 @@ div.v-layout.v-horizontal.v-widget {
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
-.instagual_style .v-button:before {
+.instagual_style .v-button:before, .instagual_style .instagual_style .button_inicioSesion:before {
 	content: "";
 	display: inline-block;
 	width: 0;
@@ -2101,23 +2101,23 @@ div.v-layout.v-horizontal.v-widget {
 	vertical-align: middle;
 }
 
-.instagual_style .v-button > div {
+.instagual_style .v-button > div, .instagual_style .button_inicioSesion > div {
 	vertical-align: middle;
 }
 
-.v-sa .instagual_style .v-button:before {
+.v-sa .instagual_style .v-button:before, .v-sa .instagual_style .instagual_style .button_inicioSesion:before {
 	height: 110%;
 }
 
-.v-ff .instagual_style .v-button:before {
+.v-ff .instagual_style .v-button:before, .v-ff .instagual_style .instagual_style .button_inicioSesion:before {
 	height: 107%;
 }
 
-.v-ie .instagual_style .v-button:before {
+.v-ie .instagual_style .v-button:before, .v-ie .instagual_style .instagual_style .button_inicioSesion:before {
 	margin-top: 4px;
 }
 
-.instagual_style .v-button:after {
+.instagual_style .v-button:after, .instagual_style .instagual_style .button_inicioSesion:after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -2130,22 +2130,22 @@ div.v-layout.v-horizontal.v-widget {
 	transition: box-shadow 180ms, border 180ms;
 }
 
-.instagual_style .v-button:focus:after {
+.instagual_style .v-button:focus:after, .instagual_style .instagual_style .button_inicioSesion:focus:after {
 	-webkit-transition: none;
 	-moz-transition: none;
 	transition: none;
 }
 
-.instagual_style .v-button.v-disabled {
+.instagual_style .v-button.v-disabled, .instagual_style .instagual_style .v-disabled.button_inicioSesion {
 	opacity: 0.5;
 	filter: alpha(opacity=50) ;
 }
 
-.instagual_style .v-button.v-disabled:after {
+.instagual_style .v-button.v-disabled:after, .instagual_style .instagual_style .v-disabled.button_inicioSesion:after {
 	display: none;
 }
 
-.instagual_style .v-button:after {
+.instagual_style .v-button:after, .instagual_style .instagual_style .button_inicioSesion:after {
 	border: inherit;
 	top: -1px;
 	right: -1px;
@@ -2153,17 +2153,17 @@ div.v-layout.v-horizontal.v-widget {
 	left: -1px;
 }
 
-.instagual_style .v-button:hover:after {
+.instagual_style .v-button:hover:after, .instagual_style .instagual_style .button_inicioSesion:hover:after {
 	background-color: rgba(186, 186, 186, 0.1);
 }
 
-.instagual_style .v-button:focus:after {
+.instagual_style .v-button:focus:after, .instagual_style .instagual_style .button_inicioSesion:focus:after {
 	border-color: #197de1;
 	-webkit-box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5);
 	box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5);
 }
 
-.instagual_style .v-button:active:after {
+.instagual_style .v-button:active:after, .instagual_style .instagual_style .button_inicioSesion:active:after {
 	background-color: rgba(125, 125, 125, 0.2);
 }
 
@@ -3912,7 +3912,7 @@ div.v-layout.v-horizontal.v-widget {
 	border-radius: 0;
 }
 
-.instagual_style .v-csslayout-v-component-group .v-widget ~ .v-widget.v-upload:not(:last-child) .v-button {
+.instagual_style .v-csslayout-v-component-group .v-widget ~ .v-widget.v-upload:not(:last-child) .v-button, .instagual_style .v-csslayout-v-component-group .v-widget ~ .v-widget.v-upload:not(:last-child) .instagual_style .button_inicioSesion {
 	border-radius: 0;
 }
 
@@ -3921,7 +3921,7 @@ div.v-layout.v-horizontal.v-widget {
 	border-bottom-left-radius: 0;
 }
 
-.instagual_style .v-csslayout-v-component-group .v-widget.v-upload:last-child .v-button {
+.instagual_style .v-csslayout-v-component-group .v-widget.v-upload:last-child .v-button, .instagual_style .v-csslayout-v-component-group .v-widget.v-upload:last-child .instagual_style .button_inicioSesion {
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
 }
@@ -3931,7 +3931,7 @@ div.v-layout.v-horizontal.v-widget {
 	border-bottom-right-radius: 0;
 }
 
-.instagual_style .v-csslayout-v-component-group .v-widget.v-upload:first-child .v-button, .instagual_style .v-csslayout-v-component-group .v-caption:first-child + .v-widget.v-upload .v-button {
+.instagual_style .v-csslayout-v-component-group .v-widget.v-upload:first-child .v-button, .instagual_style .v-csslayout-v-component-group .v-widget.v-upload:first-child .instagual_style .button_inicioSesion, .instagual_style .v-csslayout-v-component-group .v-caption:first-child + .v-widget.v-upload .v-button, .instagual_style .v-csslayout-v-component-group .v-caption:first-child + .v-widget.v-upload .instagual_style .button_inicioSesion {
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 }
@@ -3940,7 +3940,7 @@ div.v-layout.v-horizontal.v-widget {
 	border-radius: 4px 0 0 4px;
 }
 
-.instagual_style .v-csslayout-v-component-group .v-widget ~ .v-widget.first.first.v-upload .v-button {
+.instagual_style .v-csslayout-v-component-group .v-widget ~ .v-widget.first.first.v-upload .v-button, .instagual_style .v-csslayout-v-component-group .v-widget ~ .v-widget.first.first.v-upload .instagual_style .button_inicioSesion {
 	border-radius: 4px 0 0 4px;
 }
 
@@ -3948,7 +3948,7 @@ div.v-layout.v-horizontal.v-widget {
 	border-radius: 0 4px 4px 0;
 }
 
-.instagual_style .v-csslayout-v-component-group .v-widget ~ .v-widget.last.last.v-upload .v-button {
+.instagual_style .v-csslayout-v-component-group .v-widget ~ .v-widget.last.last.v-upload .v-button, .instagual_style .v-csslayout-v-component-group .v-widget ~ .v-widget.last.last.v-upload .instagual_style .button_inicioSesion {
 	border-radius: 0 4px 4px 0;
 }
 
@@ -12363,7 +12363,7 @@ div.v-layout.v-horizontal.v-widget {
 	overflow: visible;
 }
 
-.instagual_style .v-colorpicker-popup .v-horizontallayout .v-button {
+.instagual_style .v-colorpicker-popup .v-horizontallayout .v-button, .instagual_style .v-colorpicker-popup .v-horizontallayout .instagual_style .button_inicioSesion {
 	width: 80% !important;
 }
 
@@ -12686,7 +12686,7 @@ div.v-layout.v-horizontal.v-widget {
 	min-width: 3.5em;
 }
 
-.instagual_style .v-select-twincol-buttons .v-button {
+.instagual_style .v-select-twincol-buttons .v-button, .instagual_style .v-select-twincol-buttons .instagual_style .button_inicioSesion {
 	box-sizing: border-box;
 	display: inline-block;
 	vertical-align: top;
@@ -12700,7 +12700,7 @@ div.v-layout.v-horizontal.v-widget {
 	text-align: center;
 }
 
-.instagual_style .v-select-twincol-buttons .v-button:first-child {
+.instagual_style .v-select-twincol-buttons .v-button:first-child, .instagual_style .v-select-twincol-buttons .instagual_style .button_inicioSesion:first-child {
 	top: 0;
 }
 
@@ -12708,15 +12708,15 @@ div.v-layout.v-horizontal.v-widget {
 	display: none;
 }
 
-.instagual_style .v-select-twincol-buttons .v-button:focus {
+.instagual_style .v-select-twincol-buttons .v-button:focus, .instagual_style .v-select-twincol-buttons .instagual_style .button_inicioSesion:focus {
 	z-index: 1;
 }
 
-.instagual_style .v-select-twincol-buttons .v-button:first-child {
+.instagual_style .v-select-twincol-buttons .v-button:first-child, .instagual_style .v-select-twincol-buttons .instagual_style .button_inicioSesion:first-child {
 	border-radius: 4px 4px 0 0;
 }
 
-.instagual_style .v-select-twincol-buttons .v-button:last-child {
+.instagual_style .v-select-twincol-buttons .v-button:last-child, .instagual_style .v-select-twincol-buttons .instagual_style .button_inicioSesion:last-child {
 	border-radius: 0 0 4px 4px;
 }
 
@@ -13258,11 +13258,11 @@ div.v-layout.v-horizontal.v-widget {
 	margin-top: 16px;
 }
 
-.instagual_style .v-verticallayout > .v-slot:first-child h1, .instagual_style .v-verticallayout > .v-slot:first-child .v-label-h1, .instagual_style .v-verticallayout > .v-slot:first-child h2, .instagual_style .v-verticallayout > .v-slot:first-child .v-label-h2, .instagual_style .v-verticallayout > .v-slot:first-child h3, .instagual_style .v-verticallayout > .v-slot:first-child .v-label-h3, .instagual_style .v-verticallayout > .v-slot:first-child h4, .instagual_style .v-verticallayout > .v-slot:first-child .v-label-h4, .instagual_style .v-verticallayout > div > .v-slot:first-child h1, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-label-h1, .instagual_style .v-verticallayout > div > .v-slot:first-child h2, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-label-h2, .instagual_style .v-verticallayout > div > .v-slot:first-child h3, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-label-h3, .instagual_style .v-verticallayout > div > .v-slot:first-child h4, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-label-h4 {
+.instagual_style .v-verticallayout > .v-slot:first-child h1, .instagual_style .v-verticallayout-login > .v-slot:first-child h1, .instagual_style .v-verticallayout > .v-slot:first-child .v-label-h1, .instagual_style .v-verticallayout-login > .v-slot:first-child .v-label-h1, .instagual_style .v-verticallayout > .v-slot:first-child h2, .instagual_style .v-verticallayout-login > .v-slot:first-child h2, .instagual_style .v-verticallayout > .v-slot:first-child .v-label-h2, .instagual_style .v-verticallayout-login > .v-slot:first-child .v-label-h2, .instagual_style .v-verticallayout > .v-slot:first-child h3, .instagual_style .v-verticallayout-login > .v-slot:first-child h3, .instagual_style .v-verticallayout > .v-slot:first-child .v-label-h3, .instagual_style .v-verticallayout-login > .v-slot:first-child .v-label-h3, .instagual_style .v-verticallayout > .v-slot:first-child h4, .instagual_style .v-verticallayout-login > .v-slot:first-child h4, .instagual_style .v-verticallayout > .v-slot:first-child .v-label-h4, .instagual_style .v-verticallayout-login > .v-slot:first-child .v-label-h4, .instagual_style .v-verticallayout > div > .v-slot:first-child h1, .instagual_style .v-verticallayout-login > div > .v-slot:first-child h1, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-label-h1, .instagual_style .v-verticallayout-login > div > .v-slot:first-child .v-label-h1, .instagual_style .v-verticallayout > div > .v-slot:first-child h2, .instagual_style .v-verticallayout-login > div > .v-slot:first-child h2, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-label-h2, .instagual_style .v-verticallayout-login > div > .v-slot:first-child .v-label-h2, .instagual_style .v-verticallayout > div > .v-slot:first-child h3, .instagual_style .v-verticallayout-login > div > .v-slot:first-child h3, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-label-h3, .instagual_style .v-verticallayout-login > div > .v-slot:first-child .v-label-h3, .instagual_style .v-verticallayout > div > .v-slot:first-child h4, .instagual_style .v-verticallayout-login > div > .v-slot:first-child h4, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-label-h4, .instagual_style .v-verticallayout-login > div > .v-slot:first-child .v-label-h4 {
 	margin-top: 16px;
 }
 
-.instagual_style .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell h1, .instagual_style .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell .v-label-h1, .instagual_style .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell h2, .instagual_style .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell .v-label-h2, .instagual_style .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell h3, .instagual_style .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell .v-label-h3, .instagual_style .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell h4, .instagual_style .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell .v-label-h4, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell h1, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell .v-label-h1, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell h2, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell .v-label-h2, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell h3, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell .v-label-h3, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell h4, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell .v-label-h4 {
+.instagual_style .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell h1, .instagual_style .v-verticallayout-login > .v-slot:first-child .v-formlayout-contentcell h1, .instagual_style .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell .v-label-h1, .instagual_style .v-verticallayout-login > .v-slot:first-child .v-formlayout-contentcell .v-label-h1, .instagual_style .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell h2, .instagual_style .v-verticallayout-login > .v-slot:first-child .v-formlayout-contentcell h2, .instagual_style .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell .v-label-h2, .instagual_style .v-verticallayout-login > .v-slot:first-child .v-formlayout-contentcell .v-label-h2, .instagual_style .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell h3, .instagual_style .v-verticallayout-login > .v-slot:first-child .v-formlayout-contentcell h3, .instagual_style .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell .v-label-h3, .instagual_style .v-verticallayout-login > .v-slot:first-child .v-formlayout-contentcell .v-label-h3, .instagual_style .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell h4, .instagual_style .v-verticallayout-login > .v-slot:first-child .v-formlayout-contentcell h4, .instagual_style .v-verticallayout > .v-slot:first-child .v-formlayout-contentcell .v-label-h4, .instagual_style .v-verticallayout-login > .v-slot:first-child .v-formlayout-contentcell .v-label-h4, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell h1, .instagual_style .v-verticallayout-login > div > .v-slot:first-child .v-formlayout-contentcell h1, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell .v-label-h1, .instagual_style .v-verticallayout-login > div > .v-slot:first-child .v-formlayout-contentcell .v-label-h1, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell h2, .instagual_style .v-verticallayout-login > div > .v-slot:first-child .v-formlayout-contentcell h2, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell .v-label-h2, .instagual_style .v-verticallayout-login > div > .v-slot:first-child .v-formlayout-contentcell .v-label-h2, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell h3, .instagual_style .v-verticallayout-login > div > .v-slot:first-child .v-formlayout-contentcell h3, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell .v-label-h3, .instagual_style .v-verticallayout-login > div > .v-slot:first-child .v-formlayout-contentcell .v-label-h3, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell h4, .instagual_style .v-verticallayout-login > div > .v-slot:first-child .v-formlayout-contentcell h4, .instagual_style .v-verticallayout > div > .v-slot:first-child .v-formlayout-contentcell .v-label-h4, .instagual_style .v-verticallayout-login > div > .v-slot:first-child .v-formlayout-contentcell .v-label-h4 {
 	margin-top: -0.5em;
 }
 
@@ -13726,7 +13726,7 @@ div.v-layout.v-horizontal.v-widget {
 	background: transparent;
 }
 
-.instagual_style .v-upload .v-button {
+.instagual_style .v-upload .v-button, .instagual_style .v-upload .instagual_style .button_inicioSesion {
 	box-sizing: border-box;
 	display: inline-block;
 	vertical-align: top;
@@ -13734,7 +13734,7 @@ div.v-layout.v-horizontal.v-widget {
 	white-space: normal;
 }
 
-.instagual_style .v-upload-immediate .v-button {
+.instagual_style .v-upload-immediate .v-button, .instagual_style .v-upload-immediate .instagual_style .button_inicioSesion {
 	width: 100%;
 }
 
@@ -14778,4 +14778,8 @@ div.v-layout.v-horizontal.v-widget {
 	display: inline-block;
 	width: 19px;
 	overflow: hidden;
+}
+
+.instagual_style .v-verticallayout-login {
+	background-color: #2772b6;
 }
