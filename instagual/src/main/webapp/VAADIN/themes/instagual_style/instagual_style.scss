@@ -38,8 +38,33 @@
         @extend .v-verticallayout;
         background-color: rgb(39, 114, 182);
     }
-
+	#cabecera{
+		background-color: rgb(39, 114, 182);
+	}
+	
     .button_inicioSesion {
         @extend .v-button;
     }
+    
+    .vertical_layout{
+    	@extend .v-verticallayout;
+        background-color: white;
+    }
+    .imgRedonda {
+    	width:300px;
+    	height:300px;
+    	border-radius:150px;
+	}
+	.barraHerramientas{
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		color: white;
+		background-color: rgb(39, 114, 182);
+	}
+	
+	.tabsheet_bottom{
+
+  z-index: -1;
+	}
 }
