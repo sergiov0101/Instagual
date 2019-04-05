@@ -62,9 +62,11 @@
 		color: white;
 		background-color: rgb(39, 114, 182);
 	}
-	
-	.tabsheet_bottom{
-
-  z-index: -1;
-	}
+	.v-video {
+      max-height:   100%!important;
+      max-width:    100%!important;
+      
+      height:       100%!important;
+      width:        100%!important;
+  }
 }

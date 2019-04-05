@@ -15230,6 +15230,9 @@ div.v-layout.v-horizontal.v-widget {
 	background-color: #2772b6;
 }
 
-.instagual_style .tabsheet_bottom {
-	z-index: -1;
+.instagual_style .v-video {
+	max-height: 100% !important;
+	max-width: 100% !important;
+	height: 100% !important;
+	width: 100% !important;
 }
