@@ -37,18 +37,16 @@
     #login_layout{
         background-color: rgb(39, 114, 182);
     }
-<<<<<<< HEAD
+
 	#cabecera{
 		background-color: rgb(39, 114, 182);
 		color: white;
 	}
 	
-=======
->>>>>>> branch 'desarrollo' of https://github.com/sergiov0101/Instagual.git
     .button_inicioSesion {
         @extend .v-button;
     }
-<<<<<<< HEAD
+
     
     .vertical_layout{
     	@extend .v-verticallayout;
@@ -73,7 +71,6 @@
       height:       100%!important;
       width:        100%!important;
   }
-=======
     //barra principal
     #barra-principal{
         background-color: rgb(39, 114, 182); 
@@ -101,5 +98,4 @@
         border: solid 1px;
     }
 
->>>>>>> branch 'desarrollo' of https://github.com/sergiov0101/Instagual.git
 }
