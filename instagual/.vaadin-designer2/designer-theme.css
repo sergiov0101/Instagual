@@ -14783,3 +14783,31 @@ div.v-layout.v-horizontal.v-widget {
 .instagual_style #login_layout {
 	background-color: #2772b6;
 }
+
+.instagual_style #barra-principal {
+	background-color: #2772b6;
+}
+
+.instagual_style .white_text {
+	color: white;
+}
+
+.instagual_style .no-split-panel {
+	width: 0px;
+}
+
+.instagual_style #imagen-barra-usuario {
+	margin-left: 10px;
+}
+
+.instagual_style .barraUsuario {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border: solid 1px;
+}
+
+.instagual_style #cajaUsuarioInvitado {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border: solid 1px;
+}
