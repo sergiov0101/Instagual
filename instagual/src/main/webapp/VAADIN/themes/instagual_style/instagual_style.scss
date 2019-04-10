@@ -34,18 +34,21 @@
 @mixin instagual_style {
     @include valo;
     // Insert your own theme rules here
-    .v-verticallayout-login {
-        @extend .v-verticallayout;
+    #login_layout{
         background-color: rgb(39, 114, 182);
     }
+<<<<<<< HEAD
 	#cabecera{
 		background-color: rgb(39, 114, 182);
 		color: white;
 	}
 	
+=======
+>>>>>>> branch 'desarrollo' of https://github.com/sergiov0101/Instagual.git
     .button_inicioSesion {
         @extend .v-button;
     }
+<<<<<<< HEAD
     
     .vertical_layout{
     	@extend .v-verticallayout;
@@ -70,4 +73,33 @@
       height:       100%!important;
       width:        100%!important;
   }
+=======
+    //barra principal
+    #barra-principal{
+        background-color: rgb(39, 114, 182); 
+    }
+    .white_text{
+        color: white;
+    }
+    .no-split-panel{
+        width: 0px;
+    }
+    //Barra usuario
+    #imagen-barra-usuario{
+        margin-left: 10px;
+    }
+    .barraUsuario{
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border: solid 1px;
+    }
+
+    //caja del perfil de usuario
+    #cajaUsuarioInvitado{
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border: solid 1px;
+    }
+
+>>>>>>> branch 'desarrollo' of https://github.com/sergiov0101/Instagual.git
 }
