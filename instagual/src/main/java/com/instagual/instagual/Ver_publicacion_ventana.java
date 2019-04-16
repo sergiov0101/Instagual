@@ -25,6 +25,7 @@ public class Ver_publicacion_ventana extends VerticalLayout {
 	protected HorizontalLayout usuarioPublicacion;
 	protected Image fotoPerfil;
 	protected TabSheet tabSheet;
+	protected Image imagen;
 	protected HorizontalLayout opcionesImagen;
 	protected Button me_gusta;
 	protected Button comentar;
