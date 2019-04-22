@@ -84,18 +84,23 @@
     //Barra usuario
     #imagen-barra-usuario{
         margin-left: 10px;
+        margin-right: 10px;
     }
     .barraUsuario{
-        padding-top: 2px;
+        padding-top: 5px;
         padding-bottom: 2px;
-        border: solid 1px;
+       // border: solid 1px;
     }
 
     //caja del perfil de usuario
     #cajaUsuarioInvitado{
         padding-top: 2px;
         padding-bottom: 2px;
-        border: solid 1px;
+        //border: solid 1px;
+    }
+
+    #grid_informacionUsuario{
+        font-size: 11px;
     }
 
 }
