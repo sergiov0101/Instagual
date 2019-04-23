@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;instagual_style&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout spacing="false" margin="false">
+   <vaadin-horizontal-layout spacing="false" id="cabecera" width-full height="50px">
+    <vaadin-button icon="fonticon://Vaadin-Icons/e6eb" style-name="borderless icon-only huge" height-full plain-text _id="back"></vaadin-button>
+    <vaadin-image source="theme://images/logoTexto.jpeg" width="87px" height-full :middle></vaadin-image>
+    <vaadin-absolute-layout :expand></vaadin-absolute-layout>
+   </vaadin-horizontal-layout>
+   <vaadin-vertical-layout spacing="false" margin="false">
+    <vaadin-horizontal-layout spacing="false" width-full :middle :right>
+     <vaadin-horizontal-layout primary-style-name="vertical_layout" style-name="light" spacing="false" width="168px" height="50px" _id="usuarioPublicacion">
+      <vaadin-absolute-layout width="2px" height-auto></vaadin-absolute-layout>
+      <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="45px" height="45px" _id="fotoPerfil" :middle :center></vaadin-image>
+      <vaadin-link caption="@usuario" width-full :middle :center :expand></vaadin-link>
+     </vaadin-horizontal-layout>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e929" height-full plain-text _id="botonAñadir" :middle :right></vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e762" height-full plain-text _id="botonPublicar"></vaadin-button>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+   <vaadin-horizontal-layout primary-style-name="barraHerramientas" spacing="false" responsive id="barra_herramientas" width-full height="50px">
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7ec" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e805" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7fe" style-name="borderless icon-only huge" size-full plain-text :expand></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e617" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
+    <vaadin-vertical-layout></vaadin-vertical-layout>
+   </vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>
