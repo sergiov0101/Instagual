@@ -7,5 +7,5 @@ import user_interface.Anadir_comentario;
 public class Ver_listado_de_comentarios extends Ver_listado_de_comentarios_inv_ {
 	public Acciones_publicacion _acciones_publicacion;
 	public Vector<Comentario> _list_Comentario = new Vector<Comentario>();
-	public Vector<Anadir_comentario> _list_Añadir_comentario = new Vector<Anadir_comentario>();
+	public Vector<Anadir_comentario> _list_Anadir_comentario = new Vector<Anadir_comentario>();
 }

@@ -120,7 +120,21 @@
 }
 //bloque actividad
 .actividadElement{
-    border:solid;
-    padding: 1px;
+    border:  rgb(39, 114, 182) 2px solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px;
+}
+
+//comentarios
+.comentarioVista{
+    border:  rgb(39, 114, 182) 2px solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px;
+}
+.eliminarComentarioButton{
+    background-color:  rgb(39, 114, 182) !important;
+    margin-right: 5px;
 }
 }
