@@ -14860,3 +14860,8 @@ div.v-layout.v-horizontal.v-widget {
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
 }
+
+.instagual_style .actividadElement {
+	border: solid;
+	padding: 1px;
+}
