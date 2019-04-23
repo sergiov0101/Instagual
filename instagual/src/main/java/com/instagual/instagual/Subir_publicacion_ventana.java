@@ -5,6 +5,8 @@ import com.vaadin.annotations.DesignRoot;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Image;
+import com.vaadin.ui.TabSheet;
+import com.vaadin.ui.TextArea;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.declarative.Design;
 
@@ -25,6 +27,9 @@ public class Subir_publicacion_ventana extends VerticalLayout {
 	protected Image fotoPerfil;
 	protected Button botonAñadir;
 	protected Button botonPublicar;
+	protected TabSheet tabSheet;
+	protected Image imagen;
+	protected TextArea descripcionAreaSubir;
 
 	public Subir_publicacion_ventana() {
 		Design.read(this);

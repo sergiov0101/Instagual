@@ -15284,3 +15284,22 @@ div.v-layout.v-horizontal.v-widget {
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
 }
+
+.instagual_style .actividadElement {
+	border: #2772b6 2px solid;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding: 5px;
+}
+
+.instagual_style .comentarioVista {
+	border: #2772b6 2px solid;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding: 5px;
+}
+
+.instagual_style .eliminarComentarioButton {
+	background-color: #2772b6 !important;
+	margin-right: 5px;
+}
