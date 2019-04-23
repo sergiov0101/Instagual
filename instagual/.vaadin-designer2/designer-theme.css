@@ -14834,7 +14834,9 @@ div.v-layout.v-horizontal.v-widget {
 	padding-top: 2px;
 	padding-bottom: 2px;
 	border: solid 1px;
+	margin-right: 10px;
 }
+
 
 .instagual_style #cajaUsuarioInvitado {
 	padding-top: 2px;
@@ -14859,4 +14861,8 @@ div.v-layout.v-horizontal.v-widget {
 	background-color: #ccc;
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
+}
+
+.instagual_style #grid_informacionUsuario {
+	font-size: 11px;
 }
