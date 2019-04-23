@@ -14859,6 +14859,7 @@ div.v-layout.v-horizontal.v-widget {
 	background-color: #ccc;
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
+
 }
 
 .instagual_style .actividadElement {
@@ -14878,4 +14879,5 @@ div.v-layout.v-horizontal.v-widget {
 .instagual_style .eliminarComentarioButton {
 	background-color: #2772b6 !important;
 	margin-right: 5px;
+
 }
