@@ -37,7 +37,6 @@
     #login_layout{
         background-color: rgb(39, 114, 182);
     }
-
 	#cabecera{
 		background-color: rgb(39, 114, 182);
 		color: white;
@@ -46,7 +45,6 @@
     .button_inicioSesion {
         @extend .v-button;
     }
-
     
     .vertical_layout{
     	@extend .v-verticallayout;
@@ -71,18 +69,22 @@
       height:       100%!important;
       width:        100%!important;
   }
-    //barra principal
-    #barra-principal{
-        background-color: rgb(39, 114, 182); 
+    .button_inicioSesion {
+        @extend .v-button;
     }
-    .white_text{
-        color: white;
-    }
-    .no-split-panel{
-        width: 0px;
-    }
+   //barra principal
+   #barra-principal{
+    background-color: rgb(39, 114, 182); 
+}
+.white_text{
+    color: white;
+}
+.no-split-panel{
+    width: 0px;
+}
     //Barra usuario
-    #imagen-barra-usuario{
+     //Barra usuario
+     #imagen-barra-usuario{
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -98,9 +100,7 @@
         padding-bottom: 2px;
         //border: solid 1px;
     }
-
     #grid_informacionUsuario{
         font-size: 11px;
     }
-
 }

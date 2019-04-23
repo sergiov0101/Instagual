@@ -13,14 +13,15 @@
     <vaadin-absolute-layout :expand></vaadin-absolute-layout>
    </vaadin-horizontal-layout>
    <vaadin-vertical-layout spacing="false" margin="false">
-    <vaadin-horizontal-layout spacing="false" width-full :middle :right>
-     <vaadin-horizontal-layout primary-style-name="vertical_layout" style-name="light" spacing="false" width="168px" height="50px" _id="usuarioPublicacion">
+    <vaadin-horizontal-layout spacing="false" width-full>
+     <vaadin-horizontal-layout primary-style-name="vertical_layout" style-name="light" spacing="false" width-full height="50px" _id="usuarioPublicacion">
       <vaadin-absolute-layout width="2px" height-auto></vaadin-absolute-layout>
       <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="45px" height="45px" _id="fotoPerfil" :middle :center></vaadin-image>
       <vaadin-link caption="@usuario" width-full :middle :center :expand></vaadin-link>
      </vaadin-horizontal-layout>
-     <vaadin-button icon="fonticon://Vaadin-Icons/e929" height-full plain-text _id="botonAñadir" :middle :right></vaadin-button>
-     <vaadin-button icon="fonticon://Vaadin-Icons/e762" height-full plain-text _id="botonPublicar"></vaadin-button>
+     <vaadin-horizontal-layout></vaadin-horizontal-layout>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e929" style-name="borderless huge icon-only" width="60px" height-full plain-text _id="botonAñadir" :middle :right></vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e762" style-name="borderless huge icon-only" height-full plain-text _id="botonPublicar"></vaadin-button>
     </vaadin-horizontal-layout>
    </vaadin-vertical-layout>
    <vaadin-horizontal-layout primary-style-name="barraHerramientas" spacing="false" responsive id="barra_herramientas" width-full height="50px">
