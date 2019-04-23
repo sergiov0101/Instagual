@@ -1,3 +1,4 @@
+
 // If you edit this file you need to compile the theme. See README.md for details.
 
 // Global variable overrides. Must be declared before importing Valo.
@@ -37,7 +38,6 @@
     #login_layout{
         background-color: rgb(39, 114, 182);
     }
-
 	#cabecera{
 		background-color: rgb(39, 114, 182);
 		color: white;
@@ -46,7 +46,6 @@
     .button_inicioSesion {
         @extend .v-button;
     }
-
     
     .vertical_layout{
     	@extend .v-verticallayout;
@@ -71,6 +70,9 @@
       height:       100%!important;
       width:        100%!important;
   }
+    .button_inicioSesion {
+        @extend .v-button;
+    }
     //barra principal
     #barra-principal{
         background-color: rgb(39, 114, 182); 
@@ -84,23 +86,35 @@
     //Barra usuario
     #imagen-barra-usuario{
         margin-left: 10px;
-        margin-right: 10px;
     }
     .barraUsuario{
-        padding-top: 5px;
+        padding-top: 2px;
         padding-bottom: 2px;
-       // border: solid 1px;
+        border: solid 1px;
     }
 
     //caja del perfil de usuario
     #cajaUsuarioInvitado{
         padding-top: 2px;
         padding-bottom: 2px;
-        //border: solid 1px;
+        border: solid 1px;
     }
-
-    #grid_informacionUsuario{
-        font-size: 11px;
-    }
-
+    
+    .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
 }

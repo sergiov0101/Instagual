@@ -15252,17 +15252,40 @@ div.v-layout.v-horizontal.v-widget {
 
 .instagual_style #imagen-barra-usuario {
 	margin-left: 10px;
-	margin-right: 10px;
+
 }
 
 .instagual_style .barraUsuario {
-	padding-top: 5px;
+	padding-top: 2px;
 	padding-bottom: 2px;
+	border: solid 1px;
+	margin-right: 10px;
 }
+
 
 .instagual_style #cajaUsuarioInvitado {
 	padding-top: 2px;
 	padding-bottom: 2px;
+	border: solid 1px;
+}
+
+.instagual_style .switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+.instagual_style .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
 }
 
 .instagual_style #grid_informacionUsuario {
