@@ -18,10 +18,11 @@
       <vaadin-image source="theme://images/user.png" id="imagen-barra-usuario" width="100px" _id="imagen_perfil_ajeno"></vaadin-image>
      </vaadin-vertical-layout>
      <vaadin-vertical-layout spacing="false" size-full margin="false">
-      <vaadin-horizontal-layout spacing="false" :middle>
-       <vaadin-label width-full height="50%" plain-text _id="nombre_usuario">
+      <vaadin-horizontal-layout spacing="false" width-full :middle>
+       <vaadin-label width-full height="50%" plain-text _id="nombre_usuario" :expand="0.1">
          Usuario Usuario 
        </vaadin-label>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e764" style-name="borderless huge icon-only" width="37px" height="35px" plain-text _id="botonOpciones" :middle :right></vaadin-button>
       </vaadin-horizontal-layout>
       <vaadin-horizontal-layout spacing="false">
        <vaadin-grid-layout spacing responsive id="grid_informacionUsuario" _id="grid_informacionUsuario" :expand="2">
