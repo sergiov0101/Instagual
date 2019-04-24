@@ -1,4 +1,5 @@
 
+
 // If you edit this file you need to compile the theme. See README.md for details.
 
 // Global variable overrides. Must be declared before importing Valo.
@@ -116,5 +117,24 @@
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
+}
+//bloque actividad
+.actividadElement{
+    border:  rgb(39, 114, 182) 2px solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px;
+}
+
+//comentarios
+.comentarioVista{
+    border:  rgb(39, 114, 182) 2px solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px;
+}
+.eliminarComentarioButton{
+    background-color:  rgb(39, 114, 182) !important;
+    margin-right: 5px;
 }
 }

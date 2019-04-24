@@ -12,30 +12,25 @@
     <vaadin-image source="theme://images/logoTexto.jpeg" width="87px" height-full :middle></vaadin-image>
     <vaadin-absolute-layout :expand></vaadin-absolute-layout>
    </vaadin-horizontal-layout>
-   <vaadin-vertical-layout spacing="false" margin="false">
-    <vaadin-horizontal-layout spacing="false" width-full>
-     <vaadin-horizontal-layout primary-style-name="vertical_layout" style-name="light" spacing="false" width-full height="50px" _id="usuarioPublicacion" :expand="0.4">
-      <vaadin-absolute-layout width="2px" height-auto></vaadin-absolute-layout>
-      <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="45px" height="45px" _id="fotoPerfil" :middle :center></vaadin-image>
-      <vaadin-link caption="@usuario" width-full :middle :center :expand></vaadin-link>
-     </vaadin-horizontal-layout>
-     <vaadin-button icon="fonticon://Vaadin-Icons/e929" style-name="borderless huge icon-only" height-full plain-text _id="botonAñadir" :middle :right></vaadin-button>
-     <vaadin-button icon="fonticon://Vaadin-Icons/e762" style-name="borderless huge icon-only" height-full plain-text _id="botonPublicar" :middle :right></vaadin-button>
+   <vaadin-vertical-layout spacing="false" margin="false" _id="comentarios">
+    <vaadin-horizontal-layout style-name="comentarioVista" responsive size-full _id="comentarioVista">
+     <vaadin-label width-full plain-text :expand="0.1">
+       @usuario: comentario añadido por un usuario 
+     </vaadin-label>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e80b" style-name="eliminarComentarioButton" plain-text _id="eliminarComentarioButton" :bottom :right></vaadin-button>
     </vaadin-horizontal-layout>
-    <vaadin-tab-sheet style-name="equal-width-tabs compact-tabbar centered-tabs padded-tabbar" responsive size-full _id="tabSheet">
-     <tab icon="fonticon://Vaadin-Icons/e75c" selected>
-      <vaadin-image source="theme://images/ejemplo.jpeg" width-full height="320px" _id="imagen"></vaadin-image>
-     </tab>
-     <tab icon="fonticon://Vaadin-Icons/e75c">
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     </tab>
-     <tab icon="fonticon://Vaadin-Icons/e75c">
-      <vaadin-video caption-as-html preload="none" autoplay loop show-controls="false" responsive size-full>
-       <source href="theme://images/ejemplo.mp4">
-      </vaadin-video>
-     </tab>
-    </vaadin-tab-sheet>
-    <vaadin-text-area placeholder="Introduce descripcion" width-full _id="descripcionAreaSubir"></vaadin-text-area>
+    <vaadin-horizontal-layout style-name="comentarioVista" responsive size-full _id="comentarioVista1">
+     <vaadin-label width-full plain-text :expand="0.1">
+       @usuario: comentario añadido por un usuario 
+     </vaadin-label>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e80b" style-name="eliminarComentarioButton" plain-text _id="eliminarComentarioButton1" :bottom :right></vaadin-button>
+    </vaadin-horizontal-layout>
+    <vaadin-horizontal-layout style-name="comentarioVista" responsive size-full _id="comentarioVista2">
+     <vaadin-label width-full plain-text :expand="0.1">
+       @usuario: comentario añadido por un usuario 
+     </vaadin-label>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e80b" style-name="eliminarComentarioButton" plain-text _id="eliminarComentarioButton2" :bottom :right></vaadin-button>
+    </vaadin-horizontal-layout>
    </vaadin-vertical-layout>
    <vaadin-horizontal-layout primary-style-name="barraHerramientas" spacing="false" responsive id="barra_herramientas" width-full height="50px">
     <vaadin-button icon="fonticon://Vaadin-Icons/e7ec" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
