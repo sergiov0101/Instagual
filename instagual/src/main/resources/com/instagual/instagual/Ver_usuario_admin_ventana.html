@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;instagual_style&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout spacing="false" margin="false">
+   <vaadin-horizontal-layout id="cabecera" width-full>
+    <vaadin-absolute-layout width="20px" height="0px"></vaadin-absolute-layout>
+    <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="100px" height="100px" :middle></vaadin-image>
+    <vaadin-vertical-layout size-full :middle :expand>
+     <vaadin-label style-name="huge bold" plain-text>
+       @admin 
+     </vaadin-label>
+     <vaadin-label style-name="large" plain-text>
+       Nombre Apellido Apellido 
+     </vaadin-label>
+    </vaadin-vertical-layout>
+    <vaadin-image source="theme://images/logoTexto.jpeg" width="200px" :middle :right></vaadin-image>
+   </vaadin-horizontal-layout>
+   <vaadin-tab-sheet style-name="framed compact-tabbar" responsive>
+    <tab caption="Actividad" selected>
+     <vaadin-vertical-layout>
+      <vaadin-horizontal-layout width-full>
+       <vaadin-text-field icon="fonticon://Vaadin-Icons/e805" style-name="inline-icon" placeholder="Buscar..." width="190%"></vaadin-text-field>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e798" style-name="borderless-colored" responsive plain-text :right></vaadin-button>
+      </vaadin-horizontal-layout>
+     </vaadin-vertical-layout>
+    </tab>
+    <tab caption="Usuario">
+     <vaadin-vertical-layout size-full>
+      <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="200px" height="200px" :center></vaadin-image>
+      <vaadin-button style-name="borderless-colored small" plain-text :center>
+        Cambiar foto de perfil 
+      </vaadin-button>
+      <vaadin-text-field placeholder="Nombre..." width="300px" :center></vaadin-text-field>
+      <vaadin-text-field placeholder="Apellidos..." width="300px" :center></vaadin-text-field>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e75b" style-name="primary" plain-text :center></vaadin-button>
+     </vaadin-vertical-layout>
+    </tab>
+   </vaadin-tab-sheet>
+  </vaadin-vertical-layout>
+ </body>
+</html>
