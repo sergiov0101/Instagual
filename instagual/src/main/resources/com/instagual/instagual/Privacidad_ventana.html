@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;instagual_style&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout style-name="well" spacing="false" height="100.93%" margin="false">
+   <vaadin-label style-name="h3 bold" width="95%" plain-text :center>
+     Privacidad 
+   </vaadin-label>
+   <vaadin-horizontal-layout size-full>
+    <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
+    <vaadin-label style-name="small bold" width="211px" height-full plain-text :middle :expand>
+      Perfil público 
+    </vaadin-label>
+    <vaadin-slider max="1" responsive width="69px" value="1" _id="perfil_publico" :middle></vaadin-slider>
+    <vaadin-absolute-layout width="9px" height-auto></vaadin-absolute-layout>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout size-full>
+    <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
+    <vaadin-label style-name="small bold" width="211px" height-full plain-text :middle :expand>
+      Mostrar seguidores 
+    </vaadin-label>
+    <vaadin-slider max="1" responsive width="69px" value="1" _id="mostrar_seguidores" :middle></vaadin-slider>
+    <vaadin-absolute-layout width="9px" height-auto></vaadin-absolute-layout>
+   </vaadin-horizontal-layout>
+   <vaadin-button style-name="borderless small" width="127px" plain-text _id="usuarios_bloqueados">
+     Usuarios bloqueados 
+   </vaadin-button>
+   <vaadin-absolute-layout width-auto height="0px"></vaadin-absolute-layout>
+   <vaadin-button style-name="primary small" plain-text _id="cerrar_sesion" :center>
+     Cerrar sesión 
+   </vaadin-button>
+   <vaadin-absolute-layout height="50px"></vaadin-absolute-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>
