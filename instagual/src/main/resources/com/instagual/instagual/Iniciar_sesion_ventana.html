@@ -7,19 +7,21 @@
  </head>
  <body>
   <vaadin-absolute-layout id="login_layout">
-   <vaadin-image source="theme://images/logoTexto.jpeg" responsive height="262px"></vaadin-image>
-   <vaadin-vertical-layout spacing="false" responsive height="151px" margin="false" :top="213px" :left="0px">
-    <vaadin-text-field caption="usuario" responsive width="90%" _id="usuario" :center></vaadin-text-field>
-    <vaadin-password-field caption="Contraseña" width="90%" :center></vaadin-password-field>
-   </vaadin-vertical-layout>
-   <vaadin-horizontal-layout width="257px" :top="398px" :left="35px">
-    <vaadin-native-button width="123px" plain-text>
-      Iniciar sesión 
-    </vaadin-native-button>
-    <vaadin-native-button width="123px" plain-text>
-      Invitado 
-    </vaadin-native-button>
-   </vaadin-horizontal-layout>
+   <vaadin-absolute-layout style-name="LoginPricipalLayout" _id="mainLayout">
+    <vaadin-image source="theme://images/logoTexto.jpeg" responsive height="262px" _id="imagenPrincipal"></vaadin-image>
+    <vaadin-vertical-layout spacing="false" responsive height="151px" margin="false" _id="loginVertLayout" :top="249px" :left="0px">
+     <vaadin-text-field caption="usuario" responsive width="90%" _id="textFieldUsuario" :center></vaadin-text-field>
+     <vaadin-password-field caption="Contraseña" width="90%" _id="textFieldContraseña" :center></vaadin-password-field>
+    </vaadin-vertical-layout>
+    <vaadin-horizontal-layout width="53.66%" height="55px" _id="horizontalBotones" :top="431px" :left="185px">
+     <vaadin-native-button width="123px" plain-text>
+       Iniciar sesión 
+     </vaadin-native-button>
+     <vaadin-native-button width="123px" height="33px" plain-text _id="buttonIniciarSesionInv">
+       Invitado 
+     </vaadin-native-button>
+    </vaadin-horizontal-layout>
+   </vaadin-absolute-layout>
   </vaadin-absolute-layout>
  </body>
 </html>

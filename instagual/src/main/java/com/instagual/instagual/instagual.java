@@ -1,5 +1,4 @@
 package com.instagual.instagual;
-
 import javax.servlet.annotation.WebServlet;
 
 import com.vaadin.annotations.Theme;
@@ -11,6 +10,7 @@ import com.vaadin.ui.Label;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
+import user_interface.Iniciar_sesion;
 
 /**
  * This UI is the application entry point. A UI may either represent a browser window 
@@ -24,20 +24,26 @@ public class instagual extends UI {
 
     @Override
     protected void init(VaadinRequest vaadinRequest) {
+    	Iniciar_sesion ventanaInicio = new Iniciar_sesion();
         final VerticalLayout layout = new VerticalLayout();
         
-        final TextField name = new TextField();
+        /*final TextField name = new TextField();
         name.setCaption("Type your name here:");
+        final TextField name2 = new TextField();
+        name2.setCaption("Type your name here:");
 
-        Button button = new Button("Click Me");
+        Button button = new Button("pulsa");
         button.addClickListener(e -> {
             layout.addComponent(new Label("Thanks " + name.getValue() 
                     + ", it works!"));
         });
         
-        layout.addComponents(name, button);
+        layout.addComponents(name, button,ventanaInicio);
+        ventanaInicio.setVisible(true);*/
+       // layout.addComponent(ventanaInicio);
         
-        setContent(layout);
+        //setContent(layout);
+    	setContent(new  Iniciar_sesion());
     }
 
     @WebServlet(urlPatterns = "/*", name = "instagualServlet", asyncSupported = true)
