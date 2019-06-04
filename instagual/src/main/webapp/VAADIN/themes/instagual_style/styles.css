@@ -15257,13 +15257,11 @@ div.v-layout.v-horizontal.v-widget {
 .instagual_style .barraUsuario {
 	padding-top: 2px;
 	padding-bottom: 2px;
-	border: solid 1px;
 }
 
 .instagual_style #cajaUsuarioInvitado {
 	padding-top: 2px;
 	padding-bottom: 2px;
-	border: solid 1px;
 }
 
 .instagual_style .switch {
@@ -15302,4 +15300,9 @@ div.v-layout.v-horizontal.v-widget {
 .instagual_style .eliminarComentarioButton {
 	background-color: #2772b6 !important;
 	margin-right: 5px;
+}
+
+.instagual_style .botonSeguir {
+	background-color: #2772b6 !important;
+	margin-left: 5px;
 }
