@@ -29,6 +29,7 @@ public class Iniciar_sesion_ventana extends AbsoluteLayout {
 	protected TextField textFieldUsuario;
 	protected PasswordField textFieldContraseña;
 	protected HorizontalLayout horizontalBotones;
+	protected NativeButton buttonIniciarSesion;
 	protected NativeButton buttonIniciarSesionInv;
 
 	public Iniciar_sesion_ventana() {

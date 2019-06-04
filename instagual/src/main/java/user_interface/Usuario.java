@@ -10,7 +10,7 @@ public class Usuario extends usuario_ventana {
 	Iniciar_sesion iniciarSesion = new Iniciar_sesion();
 	
 	public Usuario() {
-		setContent(new Listado_de_publicaciones_inv_());
+		//setContent(new Listado_de_publicaciones_inv_());
 		//principal.addComponent(new Iniciar_sesion());
 		//principal.setVisible(true);
 	}

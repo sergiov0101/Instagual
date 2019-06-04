@@ -6,23 +6,25 @@
   <meta name="vaadin-version" content="8.1.5">
  </head>
  <body>
-  <vaadin-vertical-layout spacing="false" margin="false">
-   <vaadin-horizontal-layout spacing="false" id="cabecera" width-full height="50px">
-    <vaadin-button icon="fonticon://Vaadin-Icons/e6eb" style-name="borderless icon-only huge" height-full plain-text _id="back"></vaadin-button>
-    <vaadin-image source="theme://images/logoTexto.jpeg" width="87px" height-full :middle></vaadin-image>
-    <vaadin-absolute-layout :expand></vaadin-absolute-layout>
-   </vaadin-horizontal-layout>
-   <vaadin-vertical-layout spacing="false" size-full margin="false">
-    <vaadin-vertical-layout spacing="false" margin="false" _id="listaPublicaciones"></vaadin-vertical-layout>
+  <vaadin-panel style-name="v-scrollable" size-full>
+   <vaadin-vertical-layout spacing="false" margin="false" _id="mainLayout">
+    <vaadin-horizontal-layout style-name="MainHead" spacing="false" id="cabecera" width-full height="50px">
+     <vaadin-button icon="fonticon://Vaadin-Icons/e6eb" style-name="borderless icon-only huge" height-full plain-text _id="back"></vaadin-button>
+     <vaadin-image source="theme://images/logoTexto.jpeg" width="87px" height-full :middle></vaadin-image>
+     <vaadin-absolute-layout :expand></vaadin-absolute-layout>
+    </vaadin-horizontal-layout>
+    <vaadin-vertical-layout spacing="false" size-full margin="false" _id="contentLayout">
+     <vaadin-vertical-layout spacing="false" size-full margin="false" _id="listaPublicaciones"></vaadin-vertical-layout>
+    </vaadin-vertical-layout>
+    <vaadin-horizontal-layout primary-style-name="barraHerramientas" spacing="false" responsive id="barra_herramientas" width-full height="50px">
+     <vaadin-button icon="fonticon://Vaadin-Icons/e7ec" style-name="borderless huge icon-only" size-full plain-text _id="btnHome" :expand></vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e805" style-name="borderless huge icon-only" size-full plain-text _id="btnSearch" :expand></vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e7fe" style-name="borderless icon-only huge" size-full plain-text _id="btnUpload" :expand></vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="borderless huge icon-only" size-full plain-text _id="btnSocial" :expand></vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e617" style-name="borderless huge icon-only" size-full plain-text _id="btnProfile" :expand></vaadin-button>
+     <vaadin-vertical-layout></vaadin-vertical-layout>
+    </vaadin-horizontal-layout>
    </vaadin-vertical-layout>
-   <vaadin-horizontal-layout primary-style-name="barraHerramientas" spacing="false" responsive id="barra_herramientas" width-full height="50px">
-    <vaadin-button icon="fonticon://Vaadin-Icons/e7ec" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e805" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e7fe" style-name="borderless icon-only huge" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e617" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-vertical-layout></vaadin-vertical-layout>
-   </vaadin-horizontal-layout>
-  </vaadin-vertical-layout>
+  </vaadin-panel>
  </body>
 </html>

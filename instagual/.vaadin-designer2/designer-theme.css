@@ -14801,6 +14801,7 @@ div.v-layout.v-horizontal.v-widget {
 
 .instagual_style .barraHerramientas {
 	position: fixed;
+	z-index: 1000;
 	bottom: 0;
 	right: 0;
 	color: white;
