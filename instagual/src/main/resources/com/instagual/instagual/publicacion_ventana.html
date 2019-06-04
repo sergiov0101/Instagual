@@ -6,19 +6,14 @@
   <meta name="vaadin-version" content="8.1.5">
  </head>
  <body>
-  <vaadin-vertical-layout spacing="false" responsive margin="false">
-   <vaadin-horizontal-layout spacing="false" id="cabecera" width-full height="50px">
-    <vaadin-button icon="fonticon://Vaadin-Icons/e6eb" style-name="borderless icon-only huge" height-full plain-text _id="back"></vaadin-button>
-    <vaadin-image source="theme://images/logoTexto.jpeg" width="87px" height-full :middle></vaadin-image>
-    <vaadin-absolute-layout :expand></vaadin-absolute-layout>
-   </vaadin-horizontal-layout>
-   <vaadin-vertical-layout spacing="false" responsive size-full margin="false" :expand>
-    <vaadin-horizontal-layout primary-style-name="vertical_layout" style-name="light" width-full height="50px" _id="usuarioPublicacion" :center>
+  <vaadin-vertical-layout spacing="false" margin="false">
+   <vaadin-vertical-layout spacing="false" responsive size-full margin="false">
+    <vaadin-horizontal-layout primary-style-name="vertical_layout" style-name="light" width-full height="50px" _id="usuarioPublicacion">
      <vaadin-absolute-layout width="2px" height-auto></vaadin-absolute-layout>
      <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="45px" height="45px" _id="fotoPerfil" :middle :center></vaadin-image>
      <vaadin-link caption="@usuario" width-full :middle :center :expand></vaadin-link>
     </vaadin-horizontal-layout>
-    <vaadin-tab-sheet style-name="equal-width-tabs compact-tabbar centered-tabs padded-tabbar" responsive size-full _id="tabSheet" :bottom :right>
+    <vaadin-tab-sheet style-name="equal-width-tabs compact-tabbar centered-tabs padded-tabbar" responsive size-full _id="tabSheet">
      <tab icon="fonticon://Vaadin-Icons/e75c" selected>
       <vaadin-image source="theme://images/637668.jpg" size-full _id="imagen"></vaadin-image>
      </tab>
@@ -31,7 +26,7 @@
       </vaadin-video>
      </tab>
     </vaadin-tab-sheet>
-    <vaadin-horizontal-layout spacing="false" width-full height="50px" _id="opcionesImagen" :center>
+    <vaadin-horizontal-layout spacing="false" width-full height="50px" _id="opcionesImagen">
      <vaadin-absolute-layout responsive :expand>
       <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="borderless icon-only huge" size-full plain-text _id="me_gusta"></vaadin-button>
      </vaadin-absolute-layout>
@@ -75,15 +70,6 @@
      </vaadin-button>
     </vaadin-vertical-layout>
    </vaadin-vertical-layout>
-   <vaadin-absolute-layout height="50px"></vaadin-absolute-layout>
-   <vaadin-horizontal-layout primary-style-name="barraHerramientas" spacing="false" responsive id="barra_herramientas" width-full height="50px" :bottom>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e7ec" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e805" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e7fe" style-name="borderless icon-only huge" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e617" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-vertical-layout></vaadin-vertical-layout>
-   </vaadin-horizontal-layout>
   </vaadin-vertical-layout>
  </body>
 </html>
