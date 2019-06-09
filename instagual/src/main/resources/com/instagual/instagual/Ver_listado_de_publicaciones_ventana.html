@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;instagual_style&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout spacing="false" responsive margin="false">
+   <vaadin-horizontal-layout spacing="false" id="cabecera" width-full height="50px">
+    <vaadin-button icon="fonticon://Vaadin-Icons/e6eb" style-name="borderless icon-only huge" height-full plain-text _id="back"></vaadin-button>
+    <vaadin-image source="theme://images/logoTexto.jpeg" width="87px" height-full :middle></vaadin-image>
+    <vaadin-absolute-layout :expand></vaadin-absolute-layout>
+   </vaadin-horizontal-layout>
+   <vaadin-vertical-layout spacing="false" size-full margin="false" :expand>
+    <vaadin-vertical-layout spacing="false" responsive size-full margin="false">
+     <vaadin-horizontal-layout primary-style-name="vertical_layout" style-name="light" width-full height="50px" _id="usuarioPublicacion" :center>
+      <vaadin-absolute-layout width="2px" height-auto></vaadin-absolute-layout>
+      <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="45px" height="45px" _id="fotoPerfil" :middle :center></vaadin-image>
+      <vaadin-link caption="@usuario" width-full :middle :center :expand></vaadin-link>
+     </vaadin-horizontal-layout>
+     <vaadin-tab-sheet style-name="equal-width-tabs compact-tabbar centered-tabs padded-tabbar" responsive size-full _id="tabSheet" :bottom :right>
+      <tab icon="fonticon://Vaadin-Icons/e75c" selected>
+       <vaadin-image source="theme://images/ejemplo.jpeg" size-full _id="imagen"></vaadin-image>
+      </tab>
+      <tab icon="fonticon://Vaadin-Icons/e75c">
+       <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
+      </tab>
+      <tab icon="fonticon://Vaadin-Icons/e75c">
+       <vaadin-video caption-as-html preload="none" autoplay loop show-controls="false" responsive size-full>
+        <source href="theme://images/ejemplo.mp4">
+       </vaadin-video>
+      </tab>
+     </vaadin-tab-sheet>
+     <vaadin-horizontal-layout spacing="false" width-full height="50px" _id="opcionesImagen" :center>
+      <vaadin-absolute-layout responsive :expand>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="borderless icon-only huge" size-full plain-text _id="me_gusta"></vaadin-button>
+      </vaadin-absolute-layout>
+      <vaadin-absolute-layout :expand>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e765" style-name="borderless huge icon-only" size-full plain-text _id="comentar"></vaadin-button>
+      </vaadin-absolute-layout>
+      <vaadin-absolute-layout :expand>
+       <vaadin-button visible="false" icon="fonticon://Vaadin-Icons/e6d6" style-name="borderless huge icon-only" size-full plain-text _id="eliminarEtiqueta">
+         Button 
+       </vaadin-button>
+       <vaadin-button visible="false" icon="fonticon://Vaadin-Icons/e80b" style-name="borderless huge icon-only" size-full plain-text _id="eliminarPublicacion">
+         Button 
+       </vaadin-button>
+      </vaadin-absolute-layout>
+      <vaadin-absolute-layout :expand></vaadin-absolute-layout>
+      <vaadin-absolute-layout :expand>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e76c" style-name="borderless icon-only huge" size-full plain-text _id="compartir"></vaadin-button>
+      </vaadin-absolute-layout>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout spacing="false" responsive width-full height="25px">
+      <vaadin-horizontal-layout size-full>
+       <vaadin-absolute-layout width="0px"></vaadin-absolute-layout>
+       <vaadin-label icon="fonticon://Vaadin-Icons/e780" height-full plain-text></vaadin-label>
+       <vaadin-label style-name="tiny" size-full plain-text :expand>
+         A x usuarios les gusta esto 
+       </vaadin-label>
+      </vaadin-horizontal-layout>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout responsive width-full>
+      <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
+      <vaadin-label style-name="bold small" height-full plain-text>
+        @usuario 
+      </vaadin-label>
+      <vaadin-label style-name="small" width-full plain-text :expand>
+        Descripción hola que tal me llamo laura hola que tal hola hola que tal hola 
+      </vaadin-label>
+     </vaadin-horizontal-layout>
+     <vaadin-vertical-layout spacing="false" height="30px" margin="false">
+      <vaadin-button style-name="borderless small" height-full plain-text>
+        Ver comentarios 
+      </vaadin-button>
+     </vaadin-vertical-layout>
+    </vaadin-vertical-layout>
+    <vaadin-vertical-layout spacing="false" responsive size-full margin="false">
+     <vaadin-horizontal-layout primary-style-name="vertical_layout" style-name="light" width-full height="50px" _id="usuarioPublicacion1" :center>
+      <vaadin-absolute-layout width="2px" height-auto></vaadin-absolute-layout>
+      <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="45px" height="45px" _id="fotoPerfil1" :middle :center></vaadin-image>
+      <vaadin-link caption="@usuario" width-full :middle :center :expand></vaadin-link>
+     </vaadin-horizontal-layout>
+     <vaadin-tab-sheet style-name="equal-width-tabs compact-tabbar centered-tabs padded-tabbar" responsive size-full _id="tabSheet1" :bottom :right>
+      <tab icon="fonticon://Vaadin-Icons/e75c" selected>
+       <vaadin-image source="theme://images/ejemplo.jpeg" size-full _id="imagen1"></vaadin-image>
+      </tab>
+      <tab icon="fonticon://Vaadin-Icons/e75c">
+       <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
+      </tab>
+      <tab icon="fonticon://Vaadin-Icons/e75c">
+       <vaadin-video caption-as-html preload="none" autoplay loop show-controls="false" responsive size-full>
+        <source href="theme://images/ejemplo.mp4">
+       </vaadin-video>
+      </tab>
+     </vaadin-tab-sheet>
+     <vaadin-horizontal-layout spacing="false" width-full height="50px" _id="opcionesImagen1" :center>
+      <vaadin-absolute-layout responsive :expand>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="borderless icon-only huge" size-full plain-text _id="me_gusta1"></vaadin-button>
+      </vaadin-absolute-layout>
+      <vaadin-absolute-layout :expand>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e765" style-name="borderless huge icon-only" size-full plain-text _id="comentar1"></vaadin-button>
+      </vaadin-absolute-layout>
+      <vaadin-absolute-layout :expand>
+       <vaadin-button visible="false" icon="fonticon://Vaadin-Icons/e6d6" style-name="borderless huge icon-only" size-full plain-text _id="eliminarEtiqueta1">
+         Button 
+       </vaadin-button>
+       <vaadin-button visible="false" icon="fonticon://Vaadin-Icons/e80b" style-name="borderless huge icon-only" size-full plain-text _id="eliminarPublicacion1">
+         Button 
+       </vaadin-button>
+      </vaadin-absolute-layout>
+      <vaadin-absolute-layout :expand></vaadin-absolute-layout>
+      <vaadin-absolute-layout :expand>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e76c" style-name="borderless icon-only huge" size-full plain-text _id="compartir1"></vaadin-button>
+      </vaadin-absolute-layout>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout spacing="false" responsive width-full height="25px">
+      <vaadin-horizontal-layout size-full>
+       <vaadin-absolute-layout width="0px"></vaadin-absolute-layout>
+       <vaadin-label icon="fonticon://Vaadin-Icons/e780" height-full plain-text></vaadin-label>
+       <vaadin-label style-name="tiny" size-full plain-text :expand>
+         A x usuarios les gusta esto 
+       </vaadin-label>
+      </vaadin-horizontal-layout>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout responsive width-full>
+      <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
+      <vaadin-label style-name="bold small" height-full plain-text>
+        @usuario 
+      </vaadin-label>
+      <vaadin-label style-name="small" width-full plain-text :expand>
+        Descripción hola que tal me llamo laura hola que tal hola hola que tal hola 
+      </vaadin-label>
+     </vaadin-horizontal-layout>
+     <vaadin-vertical-layout spacing="false" height="30px" margin="false">
+      <vaadin-button style-name="borderless small" height-full plain-text>
+        Ver comentarios 
+      </vaadin-button>
+     </vaadin-vertical-layout>
+    </vaadin-vertical-layout>
+    <vaadin-vertical-layout spacing="false" responsive size-full margin="false">
+     <vaadin-horizontal-layout primary-style-name="vertical_layout" style-name="light" width-full height="50px" _id="usuarioPublicacion2" :center>
+      <vaadin-absolute-layout width="2px" height-auto></vaadin-absolute-layout>
+      <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="45px" height="45px" _id="fotoPerfil2" :middle :center></vaadin-image>
+      <vaadin-link caption="@usuario" width-full :middle :center :expand></vaadin-link>
+     </vaadin-horizontal-layout>
+     <vaadin-tab-sheet style-name="equal-width-tabs compact-tabbar centered-tabs padded-tabbar" responsive size-full _id="tabSheet2" :bottom :right>
+      <tab icon="fonticon://Vaadin-Icons/e75c" selected>
+       <vaadin-image source="theme://images/ejemplo.jpeg" size-full _id="imagen2"></vaadin-image>
+      </tab>
+      <tab icon="fonticon://Vaadin-Icons/e75c">
+       <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
+      </tab>
+      <tab icon="fonticon://Vaadin-Icons/e75c">
+       <vaadin-video caption-as-html preload="none" autoplay loop show-controls="false" responsive size-full>
+        <source href="theme://images/ejemplo.mp4">
+       </vaadin-video>
+      </tab>
+     </vaadin-tab-sheet>
+     <vaadin-horizontal-layout spacing="false" width-full height="50px" _id="opcionesImagen2" :center>
+      <vaadin-absolute-layout responsive :expand>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="borderless icon-only huge" size-full plain-text _id="me_gusta2"></vaadin-button>
+      </vaadin-absolute-layout>
+      <vaadin-absolute-layout :expand>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e765" style-name="borderless huge icon-only" size-full plain-text _id="comentar2"></vaadin-button>
+      </vaadin-absolute-layout>
+      <vaadin-absolute-layout :expand>
+       <vaadin-button visible="false" icon="fonticon://Vaadin-Icons/e6d6" style-name="borderless huge icon-only" size-full plain-text _id="eliminarEtiqueta2">
+         Button 
+       </vaadin-button>
+       <vaadin-button visible="false" icon="fonticon://Vaadin-Icons/e80b" style-name="borderless huge icon-only" size-full plain-text _id="eliminarPublicacion2">
+         Button 
+       </vaadin-button>
+      </vaadin-absolute-layout>
+      <vaadin-absolute-layout :expand></vaadin-absolute-layout>
+      <vaadin-absolute-layout :expand>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e76c" style-name="borderless icon-only huge" size-full plain-text _id="compartir2"></vaadin-button>
+      </vaadin-absolute-layout>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout spacing="false" responsive width-full height="25px">
+      <vaadin-horizontal-layout size-full>
+       <vaadin-absolute-layout width="0px"></vaadin-absolute-layout>
+       <vaadin-label icon="fonticon://Vaadin-Icons/e780" height-full plain-text></vaadin-label>
+       <vaadin-label style-name="tiny" size-full plain-text :expand>
+         A x usuarios les gusta esto 
+       </vaadin-label>
+      </vaadin-horizontal-layout>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout responsive width-full>
+      <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
+      <vaadin-label style-name="bold small" height-full plain-text>
+        @usuario 
+      </vaadin-label>
+      <vaadin-label style-name="small" width-full plain-text :expand>
+        Descripción hola que tal me llamo laura hola que tal hola hola que tal hola 
+      </vaadin-label>
+     </vaadin-horizontal-layout>
+     <vaadin-vertical-layout spacing="false" height="30px" margin="false">
+      <vaadin-button style-name="borderless small" height-full plain-text>
+        Ver comentarios 
+      </vaadin-button>
+     </vaadin-vertical-layout>
+    </vaadin-vertical-layout>
+   </vaadin-vertical-layout>
+   <vaadin-absolute-layout height="50px"></vaadin-absolute-layout>
+   <vaadin-horizontal-layout primary-style-name="barraHerramientas" spacing="false" responsive id="barra_herramientas" width-full height="50px" :bottom>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7ec" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e805" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e7fe" style-name="borderless icon-only huge" size-full plain-text :expand></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e617" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
+    <vaadin-vertical-layout></vaadin-vertical-layout>
+   </vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>
