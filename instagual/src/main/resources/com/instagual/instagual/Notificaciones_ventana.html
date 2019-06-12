@@ -6,6 +6,42 @@
   <meta name="vaadin-version" content="8.1.5">
  </head>
  <body>
-  <vaadin-vertical-layout size-full></vaadin-vertical-layout>
+  <vaadin-vertical-layout style-name="well" spacing="false" size-full margin="false">
+   <vaadin-label style-name="h3 bold" width="95%" plain-text :center>
+     Notificaciones 
+   </vaadin-label>
+   <vaadin-horizontal-layout size-full>
+    <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
+    <vaadin-label style-name="small bold" width="211px" height-full plain-text :middle :expand>
+      Notificar me gusta 
+    </vaadin-label>
+    <vaadin-slider max="1" responsive width="69px" value="1" _id="notificar_me_gusta" :middle></vaadin-slider>
+    <vaadin-absolute-layout width="9px" height-auto></vaadin-absolute-layout>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout size-full>
+    <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
+    <vaadin-label style-name="small bold" width="211px" height-full plain-text :middle :expand>
+      Notificar comentarios 
+    </vaadin-label>
+    <vaadin-slider max="1" responsive width="69px" value="1" _id="notificar_comentarios" :middle></vaadin-slider>
+    <vaadin-absolute-layout width="9px" height-auto></vaadin-absolute-layout>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout size-full>
+    <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
+    <vaadin-label style-name="small bold" width="211px" height-full plain-text :middle :expand>
+      Notificar seguimiento 
+    </vaadin-label>
+    <vaadin-slider max="1" responsive width="69px" value="1" _id="notificar_seguimiento" :middle></vaadin-slider>
+    <vaadin-absolute-layout width="9px" height-auto></vaadin-absolute-layout>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout size-full>
+    <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
+    <vaadin-label style-name="small bold" width="211px" height-full plain-text :middle :expand>
+      Notificar solicitud 
+    </vaadin-label>
+    <vaadin-slider max="1" responsive width="69px" value="1" _id="notificar_solicitud" :middle></vaadin-slider>
+    <vaadin-absolute-layout width="9px" height-auto></vaadin-absolute-layout>
+   </vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
  </body>
 </html>
