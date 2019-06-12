@@ -6,7 +6,7 @@ public class Usuario extends usuario_ventana {
 	public Ver_listado_de_publicaciones _ver_listado_de_publicaciones;
 	public Buscar _buscar;
 	public Ver_notificaciones _ver_notificaciones;
-	public Subir_publiacion _subir_publiacion;
+	public Subir_publicacion _subir_publiacion;
 	Iniciar_sesion iniciarSesion = new Iniciar_sesion();
 	
 	public Usuario() {

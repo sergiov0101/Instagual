@@ -7,6 +7,7 @@ public class Ver_usuario_inv_ extends Ver_usuario_inv_ventana {
 	public Ver_usuario_inv_() {
 		contentLayout.addComponent(publicaciones);
 		publicaciones.setVisible(true);
+		this.optionButton.setVisible(false);
 	}
 	
 }

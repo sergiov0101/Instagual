@@ -17,7 +17,7 @@
        <vaadin-label width-full height="50%" plain-text _id="nombre_usuario1" :expand="0.1">
          Usuario Usuario 
        </vaadin-label>
-       <vaadin-button icon="fonticon://Vaadin-Icons/e764" style-name="borderless huge icon-only" width="37px" height="35px" plain-text _id="botonOpciones" :middle :right></vaadin-button>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e764" style-name="borderless huge icon-only" width="37px" height="35px" plain-text _id="optionButton" :middle :right></vaadin-button>
       </vaadin-horizontal-layout>
       <vaadin-horizontal-layout spacing="false">
        <vaadin-grid-layout spacing responsive id="grid_informacionUsuario" _id="grid_informacionUsuario1" :expand="2">
@@ -28,12 +28,12 @@
           </vaadin-label>
          </column>
          <column>
-          <vaadin-label plain-text :center>
+          <vaadin-label plain-text _id="nSeguidoresLb" :center>
             150 
           </vaadin-label>
          </column>
          <column>
-          <vaadin-label plain-text :center>
+          <vaadin-label plain-text _id="nSiguiendoLb" :center>
             124 
           </vaadin-label>
          </column>

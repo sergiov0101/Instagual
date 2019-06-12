@@ -21,7 +21,29 @@ public class Ver_listado_de_publicaciones extends Listado_de_publicaciones_popul
 				userProfile();
 			}
 		});
+		
+		this.btnSearch.addClickListener(new Button.ClickListener() {
+			public void buttonClick(ClickEvent event) {
+				
+				userSearch();
+			}
+		});
+		this.btnSocial.addClickListener(new Button.ClickListener() {
+			public void buttonClick(ClickEvent event) {
+				
+				userSocial();
+			}
+		});
+		
+		this.btnUpload.addClickListener(new Button.ClickListener() {
+			public void buttonClick(ClickEvent event) {
+				
+				userUpload();
+			}
+		});
 	}
+	
+	
 	public void inicializar() {
 		listaPublicaciones.removeAllComponents();
 		datosPrueba();
@@ -40,5 +62,20 @@ public class Ver_listado_de_publicaciones extends Listado_de_publicaciones_popul
 		for(int i = 0 ;i<5;i++) {
 			_list_Publicacion.add(new Publicacion());
 		}
+	}
+	
+	public void userSearch() {
+		contentLayout.removeAllComponents();
+		contentLayout.addComponent(new Buscar() );	
+	}
+	
+	public void userSocial() {
+		contentLayout.removeAllComponents();
+		contentLayout.addComponent(new Ver_notificaciones());
+	}
+	
+	public void userUpload() {
+		contentLayout.removeAllComponents();
+		contentLayout.addComponent(new Subir_publicacion());
 	}
 }

@@ -7,97 +7,99 @@
  </head>
  <body>
   <vaadin-vertical-layout spacing="false" margin="false">
-   <vaadin-horizontal-layout spacing="false" id="cabecera" width-full height="50px">
-    <vaadin-button icon="fonticon://Vaadin-Icons/e6eb" style-name="borderless icon-only huge" height-full plain-text _id="back"></vaadin-button>
-    <vaadin-label width-full plain-text :middle :expand>
-      Ajustes 
-    </vaadin-label>
-   </vaadin-horizontal-layout>
-   <vaadin-vertical-layout style-name="well" spacing="false" height="128px" margin="false">
-    <vaadin-label style-name="h3 bold" width="95%" plain-text :center>
-      General 
-    </vaadin-label>
-    <vaadin-button style-name="borderless small" width="127px" plain-text _id="modificar_perfil">
-      Modificar perfil 
-    </vaadin-button>
-    <vaadin-button style-name="borderless small" width="127px" plain-text _id="eliminar_cuenta">
-      Eliminar cuenta 
-    </vaadin-button>
+   <vaadin-vertical-layout spacing="false" margin="false" _id="ajustesMain">
+    <vaadin-horizontal-layout spacing="false" id="cabecera" width-full height="50px">
+     <vaadin-button icon="fonticon://Vaadin-Icons/e6eb" style-name="borderless icon-only huge" height-full plain-text _id="back"></vaadin-button>
+     <vaadin-label width-full plain-text :middle :expand>
+       Ajustes 
+     </vaadin-label>
+    </vaadin-horizontal-layout>
+    <vaadin-vertical-layout style-name="well" spacing="false" height="128px" margin="false">
+     <vaadin-label style-name="h3 bold" width="95%" plain-text :center>
+       General 
+     </vaadin-label>
+     <vaadin-button style-name="borderless small" width="127px" plain-text _id="modificar_perfil">
+       Modificar perfil 
+     </vaadin-button>
+     <vaadin-button style-name="borderless small" width="127px" plain-text _id="eliminar_cuenta">
+       Eliminar cuenta 
+     </vaadin-button>
+    </vaadin-vertical-layout>
+    <vaadin-vertical-layout style-name="well" spacing="false" height="107.32%" margin="false">
+     <vaadin-label style-name="h3 bold" width="95%" plain-text :center>
+       Notificaciones 
+     </vaadin-label>
+     <vaadin-horizontal-layout size-full>
+      <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
+      <vaadin-label style-name="small bold" width="211px" height-full plain-text :middle :expand>
+        Notificar me gusta 
+      </vaadin-label>
+      <vaadin-slider max="1" responsive width="69px" value="1" _id="notificar_me_gusta" :middle></vaadin-slider>
+      <vaadin-absolute-layout width="9px" height-auto></vaadin-absolute-layout>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout size-full>
+      <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
+      <vaadin-label style-name="small bold" width="211px" height-full plain-text :middle :expand>
+        Notificar comentarios 
+      </vaadin-label>
+      <vaadin-slider max="1" responsive width="69px" value="1" _id="notificar_comentarios" :middle></vaadin-slider>
+      <vaadin-absolute-layout width="9px" height-auto></vaadin-absolute-layout>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout size-full>
+      <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
+      <vaadin-label style-name="small bold" width="211px" height-full plain-text :middle :expand>
+        Notificar seguimiento 
+      </vaadin-label>
+      <vaadin-slider max="1" responsive width="69px" value="1" _id="notificar_seguimiento" :middle></vaadin-slider>
+      <vaadin-absolute-layout width="9px" height-auto></vaadin-absolute-layout>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout size-full>
+      <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
+      <vaadin-label style-name="small bold" width="211px" height-full plain-text :middle :expand>
+        Notificar solicitud 
+      </vaadin-label>
+      <vaadin-slider max="1" responsive width="69px" value="1" _id="notificar_solicitud" :middle></vaadin-slider>
+      <vaadin-absolute-layout width="9px" height-auto></vaadin-absolute-layout>
+     </vaadin-horizontal-layout>
+    </vaadin-vertical-layout>
+    <vaadin-horizontal-layout primary-style-name="barraHerramientas" spacing="false" responsive id="barra_herramientas" width-full height="50px">
+     <vaadin-button icon="fonticon://Vaadin-Icons/e7ec" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e805" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e7fe" style-name="borderless icon-only huge" size-full plain-text :expand></vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e617" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
+     <vaadin-vertical-layout></vaadin-vertical-layout>
+    </vaadin-horizontal-layout>
+    <vaadin-vertical-layout style-name="well" spacing="false" height="100.93%" margin="false">
+     <vaadin-label style-name="h3 bold" width="95%" plain-text :center>
+       Privacidad 
+     </vaadin-label>
+     <vaadin-horizontal-layout size-full>
+      <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
+      <vaadin-label style-name="small bold" width="211px" height-full plain-text :middle :expand>
+        Perfil público 
+      </vaadin-label>
+      <vaadin-slider max="1" responsive width="69px" value="1" _id="perfil_publico" :middle></vaadin-slider>
+      <vaadin-absolute-layout width="9px" height-auto></vaadin-absolute-layout>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout size-full>
+      <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
+      <vaadin-label style-name="small bold" width="211px" height-full plain-text :middle :expand>
+        Mostrar seguidores 
+      </vaadin-label>
+      <vaadin-slider max="1" responsive width="69px" value="1" _id="mostrar_seguidores" :middle></vaadin-slider>
+      <vaadin-absolute-layout width="9px" height-auto></vaadin-absolute-layout>
+     </vaadin-horizontal-layout>
+     <vaadin-button style-name="borderless small" width="127px" plain-text _id="usuarios_bloqueados">
+       Usuarios bloqueados 
+     </vaadin-button>
+     <vaadin-absolute-layout width-auto height="0px"></vaadin-absolute-layout>
+     <vaadin-button style-name="primary small" plain-text _id="cerrar_sesion" :center>
+       Cerrar sesión 
+     </vaadin-button>
+     <vaadin-absolute-layout height="50px"></vaadin-absolute-layout>
+    </vaadin-vertical-layout>
    </vaadin-vertical-layout>
-   <vaadin-vertical-layout style-name="well" spacing="false" height="107.32%" margin="false">
-    <vaadin-label style-name="h3 bold" width="95%" plain-text :center>
-      Notificaciones 
-    </vaadin-label>
-    <vaadin-horizontal-layout size-full>
-     <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
-     <vaadin-label style-name="small bold" width="211px" height-full plain-text :middle :expand>
-       Notificar me gusta 
-     </vaadin-label>
-     <vaadin-slider max="1" responsive width="69px" value="1" _id="notificar_me_gusta" :middle></vaadin-slider>
-     <vaadin-absolute-layout width="9px" height-auto></vaadin-absolute-layout>
-    </vaadin-horizontal-layout>
-    <vaadin-horizontal-layout size-full>
-     <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
-     <vaadin-label style-name="small bold" width="211px" height-full plain-text :middle :expand>
-       Notificar comentarios 
-     </vaadin-label>
-     <vaadin-slider max="1" responsive width="69px" value="1" _id="notificar_comentarios" :middle></vaadin-slider>
-     <vaadin-absolute-layout width="9px" height-auto></vaadin-absolute-layout>
-    </vaadin-horizontal-layout>
-    <vaadin-horizontal-layout size-full>
-     <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
-     <vaadin-label style-name="small bold" width="211px" height-full plain-text :middle :expand>
-       Notificar seguimiento 
-     </vaadin-label>
-     <vaadin-slider max="1" responsive width="69px" value="1" _id="notificar_seguimiento" :middle></vaadin-slider>
-     <vaadin-absolute-layout width="9px" height-auto></vaadin-absolute-layout>
-    </vaadin-horizontal-layout>
-    <vaadin-horizontal-layout size-full>
-     <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
-     <vaadin-label style-name="small bold" width="211px" height-full plain-text :middle :expand>
-       Notificar solicitud 
-     </vaadin-label>
-     <vaadin-slider max="1" responsive width="69px" value="1" _id="notificar_solicitud" :middle></vaadin-slider>
-     <vaadin-absolute-layout width="9px" height-auto></vaadin-absolute-layout>
-    </vaadin-horizontal-layout>
-   </vaadin-vertical-layout>
-   <vaadin-vertical-layout style-name="well" spacing="false" height="100.93%" margin="false">
-    <vaadin-label style-name="h3 bold" width="95%" plain-text :center>
-      Privacidad 
-    </vaadin-label>
-    <vaadin-horizontal-layout size-full>
-     <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
-     <vaadin-label style-name="small bold" width="211px" height-full plain-text :middle :expand>
-       Perfil público 
-     </vaadin-label>
-     <vaadin-slider max="1" responsive width="69px" value="1" _id="perfil_publico" :middle></vaadin-slider>
-     <vaadin-absolute-layout width="9px" height-auto></vaadin-absolute-layout>
-    </vaadin-horizontal-layout>
-    <vaadin-horizontal-layout size-full>
-     <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
-     <vaadin-label style-name="small bold" width="211px" height-full plain-text :middle :expand>
-       Mostrar seguidores 
-     </vaadin-label>
-     <vaadin-slider max="1" responsive width="69px" value="1" _id="mostrar_seguidores" :middle></vaadin-slider>
-     <vaadin-absolute-layout width="9px" height-auto></vaadin-absolute-layout>
-    </vaadin-horizontal-layout>
-    <vaadin-button style-name="borderless small" width="127px" plain-text _id="usuarios_bloqueados">
-      Usuarios bloqueados 
-    </vaadin-button>
-    <vaadin-absolute-layout width-auto height="0px"></vaadin-absolute-layout>
-    <vaadin-button style-name="primary small" plain-text _id="cerrar_sesion" :center>
-      Cerrar sesión 
-    </vaadin-button>
-    <vaadin-absolute-layout height="50px"></vaadin-absolute-layout>
-   </vaadin-vertical-layout>
-   <vaadin-horizontal-layout primary-style-name="barraHerramientas" spacing="false" responsive id="barra_herramientas" width-full height="50px" :bottom>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e7ec" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e805" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e7fe" style-name="borderless icon-only huge" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e617" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-vertical-layout></vaadin-vertical-layout>
-   </vaadin-horizontal-layout>
   </vaadin-vertical-layout>
  </body>
 </html>

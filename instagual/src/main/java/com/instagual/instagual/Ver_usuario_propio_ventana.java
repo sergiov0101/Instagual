@@ -26,7 +26,7 @@ public class Ver_usuario_propio_ventana extends VerticalLayout {
 	protected HorizontalLayout barra_perfil_usuario;
 	protected Image imagen_perfil_ajeno;
 	protected Label nombre_usuario;
-	protected Button botonOpciones;
+	protected Button optionButton;
 	protected GridLayout grid_informacionUsuario;
 	protected VerticalLayout publicacionesPerfil;
 	protected VerticalLayout publicacionesEtiquetadas;
