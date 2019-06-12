@@ -17,15 +17,20 @@ public class Listado_de_publicaciones_populares_inv_ extends Listado_de_publicac
 				goHome();
 			}
 		});
-		/*btnProfile.addClickListener(new Button.ClickListener() {
+		btnSearch.addClickListener(new Button.ClickListener() {
 			public void buttonClick(ClickEvent event) {
 				
-				userProfile();
+				guestSearch();
 			}
-		});*/
+		});
 	}
 	public void goHome() {
 		contentLayout.removeAllComponents();
 		contentLayout.addComponent(listaPublicaciones);
+	}
+	
+	public void guestSearch() {
+		contentLayout.removeAllComponents();
+		contentLayout.addComponent( new Buscar__inv_());
 	}
 }
