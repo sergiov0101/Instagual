@@ -27,6 +27,8 @@ public class Ver_listado_de_comentarios_inv_ventana extends VerticalLayout {
 	protected Button eliminarComentarioButton1;
 	protected HorizontalLayout comentarioVista2;
 	protected Button eliminarComentarioButton2;
+	protected HorizontalLayout addComentLy;
+	protected Button addComentButton;
 
 	public Ver_listado_de_comentarios_inv_ventana() {
 		Design.read(this);

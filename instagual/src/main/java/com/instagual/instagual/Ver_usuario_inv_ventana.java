@@ -27,6 +27,7 @@ public class Ver_usuario_inv_ventana extends VerticalLayout {
 	protected Image imagen_perfil_ajeno1;
 	protected Label nombre_usuario1;
 	protected Button optionButton;
+	protected Button blockButton;
 	protected GridLayout grid_informacionUsuario1;
 	protected Label nSeguidoresLb;
 	protected Label nSiguiendoLb;

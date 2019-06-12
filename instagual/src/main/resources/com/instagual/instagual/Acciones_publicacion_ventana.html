@@ -8,10 +8,10 @@
  <body>
   <vaadin-vertical-layout spacing="false" margin="false">
    <vaadin-horizontal-layout spacing="false" width-full height="50px" _id="opcionesImagen">
-    <vaadin-absolute-layout responsive :expand>
+    <vaadin-absolute-layout responsive _id="likeElement" :expand>
      <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="borderless icon-only huge" size-full plain-text _id="me_gusta"></vaadin-button>
     </vaadin-absolute-layout>
-    <vaadin-absolute-layout :expand>
+    <vaadin-absolute-layout _id="commentElement" :expand>
      <vaadin-button icon="fonticon://Vaadin-Icons/e765" style-name="borderless huge icon-only" size-full plain-text _id="comentar"></vaadin-button>
     </vaadin-absolute-layout>
     <vaadin-absolute-layout :expand>
@@ -23,7 +23,7 @@
      </vaadin-button>
     </vaadin-absolute-layout>
     <vaadin-absolute-layout :expand></vaadin-absolute-layout>
-    <vaadin-absolute-layout :expand>
+    <vaadin-absolute-layout _id="shareElement" :expand>
      <vaadin-button icon="fonticon://Vaadin-Icons/e76c" style-name="borderless icon-only huge" size-full plain-text _id="compartir"></vaadin-button>
     </vaadin-absolute-layout>
    </vaadin-horizontal-layout>
