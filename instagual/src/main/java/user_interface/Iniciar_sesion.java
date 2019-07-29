@@ -28,6 +28,13 @@ public class Iniciar_sesion extends Iniciar_sesion_ventana {
 			}
 		});
 		
+		recuperarpass.addClickListener(new Button.ClickListener() {
+			public void buttonClick(ClickEvent event) {
+				
+				RecuperarPass();
+			}
+		});
+		
 		
 	}
 	
@@ -47,5 +54,12 @@ public class Iniciar_sesion extends Iniciar_sesion_ventana {
 		horizontalBotones.setVisible(false);
 		mainLayout.removeStyleName("LoginPricipalLayout");
 		listadoPublicaciones.setVisible(true);
+	}
+	public void RecuperarPass() {
+		imagenPrincipal.setVisible(false);
+		loginVertLayout.setVisible(false);
+		horizontalBotones.setVisible(false);
+		mainLayout.removeStyleName("LoginPricipalLayout");
+		mainLayout.addComponent(new Recuperar_contrasena());
 	}
 }

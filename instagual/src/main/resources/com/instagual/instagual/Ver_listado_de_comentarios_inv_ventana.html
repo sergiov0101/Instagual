@@ -7,11 +7,6 @@
  </head>
  <body>
   <vaadin-vertical-layout spacing="false" margin="false">
-   <vaadin-horizontal-layout spacing="false" id="cabecera" width-full height="50px">
-    <vaadin-button icon="fonticon://Vaadin-Icons/e6eb" style-name="borderless icon-only huge" height-full plain-text _id="back"></vaadin-button>
-    <vaadin-image source="theme://images/logoTexto.jpeg" width="87px" height-full :middle></vaadin-image>
-    <vaadin-absolute-layout :expand></vaadin-absolute-layout>
-   </vaadin-horizontal-layout>
    <vaadin-vertical-layout spacing="false" margin="false" _id="comentarios">
     <vaadin-horizontal-layout style-name="comentarioVista" responsive size-full _id="comentarioVista">
      <vaadin-label width-full plain-text :expand="0.1">
@@ -32,18 +27,10 @@
      <vaadin-button icon="fonticon://Vaadin-Icons/e80b" style-name="eliminarComentarioButton" plain-text _id="eliminarComentarioButton2" :bottom :right></vaadin-button>
     </vaadin-horizontal-layout>
     <vaadin-horizontal-layout spacing="false" size-full _id="addComentLy">
-     <vaadin-text-field width-full></vaadin-text-field>
-     <vaadin-button icon="fonticon://Vaadin-Icons/e801" style-name="eliminarComentarioButton" plain-text _id="addComentButton"></vaadin-button>
+     <vaadin-text-field placeholder="Escribir comentario" width="131.2%"></vaadin-text-field>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e801" style-name="eliminarComentarioButton" plain-text _id="addComentButton" :middle :right></vaadin-button>
     </vaadin-horizontal-layout>
    </vaadin-vertical-layout>
-   <vaadin-horizontal-layout primary-style-name="barraHerramientas" spacing="false" responsive id="barra_herramientas" width-full height="50px">
-    <vaadin-button icon="fonticon://Vaadin-Icons/e7ec" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e805" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e7fe" style-name="borderless icon-only huge" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e617" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-vertical-layout></vaadin-vertical-layout>
-   </vaadin-horizontal-layout>
   </vaadin-vertical-layout>
  </body>
 </html>
