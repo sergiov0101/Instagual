@@ -23,6 +23,7 @@ import com.vaadin.ui.declarative.Design;
 public class publicacion_ventana extends VerticalLayout {
 	protected HorizontalLayout usuarioPublicacion;
 	protected Image fotoPerfil;
+	protected Button linkUsuario;
 	protected TabSheet tabSheet;
 	protected Image imagen;
 	protected HorizontalLayout lyAcciones;

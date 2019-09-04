@@ -26,6 +26,7 @@ public class Subir_publicacion_ventana extends VerticalLayout {
 	protected Image fotoPerfil;
 	protected Button botonAñadir;
 	protected Button botonPublicar;
+	protected VerticalLayout tabSheetContainer;
 	protected TabSheet tabSheet;
 	protected Image imagen;
 	protected TextArea descripcionAreaSubir;

@@ -20,12 +20,6 @@ import com.vaadin.ui.declarative.Design;
 @SuppressWarnings("serial")
 public class Ver_listado_de_comentarios_inv_ventana extends VerticalLayout {
 	protected VerticalLayout comentarios;
-	protected HorizontalLayout comentarioVista;
-	protected Button eliminarComentarioButton;
-	protected HorizontalLayout comentarioVista1;
-	protected Button eliminarComentarioButton1;
-	protected HorizontalLayout comentarioVista2;
-	protected Button eliminarComentarioButton2;
 	protected HorizontalLayout addComentLy;
 	protected Button addComentButton;
 

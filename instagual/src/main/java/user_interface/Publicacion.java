@@ -1,11 +1,12 @@
 	package user_interface;
 
 
-import org.orm.PersistentException;
+import org.orm.*;
 
 import com.instagual.instagual.publicacion_ventana;
 import com.vaadin.icons.VaadinIcons;
 import com.vaadin.jsclipboard.JSClipboard;
+import com.vaadin.shared.Connector;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.FormLayout;
@@ -15,16 +16,28 @@ import com.vaadin.ui.Notification;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.Window;
+
+import database.Configuraciones;
+
 import com.vaadin.ui.Button.ClickEvent;
 public class Publicacion extends publicacion_ventana {
 	public Ver_listado_de_publicaciones _ver_listado_de_publicaciones;
 	public Ver_publicacion _ver_publicacion;
 	public Acciones_publicacion _acciones_publicacion;
 	String shareUrl;
+	boolean meGusta = false;
+	String usuario = "prueba";//cargar de la base de datos
 	public Publicacion() {
-			shareUrl = "http://exampledddddddddddddddddd";
-
-	
+			int idAutor = 0;//cargar de la base de datos
+			int imgId = 001;
+			shareUrl = "http://exampledddddddddddddddddd/"+imgId;
+			linkUsuario.setCaption(usuario);
+			linkUsuario.addClickListener(new Button.ClickListener() {
+				public void buttonClick(ClickEvent event) {
+					
+					goToUser(idAutor);
+				}
+			});
 	        compartir.addClickListener(new Button.ClickListener() {
 				public void buttonClick(ClickEvent event) {
 					
@@ -35,22 +48,23 @@ public class Publicacion extends publicacion_ventana {
 	        comentar.addClickListener(new Button.ClickListener() {
 					public void buttonClick(ClickEvent event) {
 
-							try {
-								btnComents();
-							} catch (PersistentException e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							}
+								try {
+									btnComents();
+								} catch (PersistentException e) {
+									// TODO Auto-generated catch block
+									e.printStackTrace();
+								}
+						
 		
 					}
 			});
-
-	        me_gusta.addClickListener(new Button.ClickListener() {
-					public void buttonClick(ClickEvent event) {
-						
-						btnLike();
-					}
-			});
+	       
+		        me_gusta.addClickListener(new Button.ClickListener() {
+						public void buttonClick(ClickEvent event) {
+							
+							btnLike();
+						}
+				});
 	}
 	//Funcion del boton de compartir
 	public void btnShared() {
@@ -96,10 +110,10 @@ public class Publicacion extends publicacion_ventana {
         UI.getCurrent().addWindow(window);
 	}
 	
-	public void btnComents() throws PersistentException {
+	public void btnComents() throws PersistentException{
 		VerticalLayout subContent = new VerticalLayout();
 		subContent.setMargin(true);
-		subContent.addComponent(new Ver_listado_de_comentarios_inv_());
+		subContent.addComponent(new Ver_listado_de_comentarios());
 		Window window = new Window();
     	window.setContent(subContent);
         //window.setWidth("-1");
@@ -107,20 +121,28 @@ public class Publicacion extends publicacion_ventana {
         window.setDraggable(false);
         window.center();
         window.setModal(true);
-
+        Configuraciones.NotificarMeGusta(1, true); 
         // Add it to the root component
         UI.getCurrent().addWindow(window);
-       // database.Configuraciones.NotificarMeGusta(1,true);
+        
+        
 	}
 	
 	public void btnLike() {
 		
-		if(me_gusta.getIcon().equals(VaadinIcons.HEART)) {
+		if(meGusta) {
 			me_gusta.setIcon(VaadinIcons.HEART_O);
+			meGusta = false;// Establecer en la base de datos
 		}else {
 			me_gusta.setIcon(VaadinIcons.HEART);
+			meGusta = true;// Establecer en la base de datos
 		}
 
 	}
 	
+	public void goToUser(int idAutor) {
+		//usuarioPublicacion.removeAllComponents();
+		//this.getParent().setVisible(false);
+	
+	}
 }

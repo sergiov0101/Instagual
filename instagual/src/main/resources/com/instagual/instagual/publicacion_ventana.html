@@ -11,7 +11,9 @@
     <vaadin-horizontal-layout primary-style-name="vertical_layout" style-name="light" width-full height="50px" _id="usuarioPublicacion">
      <vaadin-absolute-layout width="2px" height-auto></vaadin-absolute-layout>
      <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="45px" height="45px" _id="fotoPerfil" :middle :center></vaadin-image>
-     <vaadin-link caption="@usuario" width-full :middle :center :expand></vaadin-link>
+     <vaadin-button primary-style-name="v-link" width-full plain-text _id="linkUsuario" :middle :center :expand>
+       usuario 
+     </vaadin-button>
     </vaadin-horizontal-layout>
     <vaadin-tab-sheet style-name="equal-width-tabs compact-tabbar centered-tabs padded-tabbar" responsive size-full _id="tabSheet">
      <tab icon="fonticon://Vaadin-Icons/e75c" selected>
